@@ -1,0 +1,41 @@
+<?php
+// Mengirim header refresh ke browser (3 detik)
+header('Refresh: 3; url=https://www.effectivecpmnetwork.com/hfyzk205e?key=13dc57ed68a19a37f641a33e0fd8aac3');
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mohon Tunggu...</title>
+    <style>
+        body { 
+            background: #f5f5f5; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            font-family: Arial, sans-serif; 
+            margin: 0;
+        }
+        .pesan { 
+            text-align: center; 
+            background: white;
+            padding: 40px 60px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="pesan">
+        <h2>Mohon tunggu sebentar...</h2>
+        <p>Anda akan dialihkan dalam 3 detik</p>
+    </div>
+</body>
+</html>
