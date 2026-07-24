@@ -1,6 +1,0 @@
-<?php
-// Langsung redirect menggunakan PHP setelah 3 detik
-sleep(3);
-header('Location: https://www.effectivecpmnetwork.com/hfyzk205e?key=13dc57ed68a19a37f641a33e0fd8aac3');
-exit;
-?>

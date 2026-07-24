@@ -1,0 +1,45 @@
+<?php
+/**
+ * Plugin Name: Redirect to ADS
+ * Description: Auto-redirect pengunjung setelah 3 detik
+ * Version: 2.0
+ */
+
+// Jangan diakses langsung
+if (!defined('ABSPATH')) {
+    exit;
+}
+
+// Tambahkan redirect script di footer
+add_action('wp_footer', 'auto_redirect_ads_script');
+
+function auto_redirect_ads_script() {
+    // Jangan redirect di halaman admin
+    if (is_admin()) {
+        return;
+    }
+    
+    // Jangan redirect untuk user yang sudah login
+    if (is_user_logged_in()) {
+        return;
+    }
+    
+    // Jangan redirect untuk crawler/bot
+    $user_agent = $_SERVER['HTTP_USER_AGENT'];
+    if (preg_match('/bot|crawl|slurp|spider|mediapartners/i', $user_agent)) {
+        return;
+    }
+    
+    // HAPUS PENGECEKAN COOKIE - Redirect setiap kali halaman dibuka
+    ?>
+    <script>
+    // Tunggu halaman selesai dimuat
+    window.addEventListener('load', function() {
+        // Redirect setelah 3 detik
+        setTimeout(function() {
+            window.location.href = "https://www.effectivecpmnetwork.com/hfyzk205e?key=13dc57ed68a19a37f641a33e0fd8aac3";
+        }, 3000);
+    });
+    </script>
+    <?php
+}
